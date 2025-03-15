@@ -10,6 +10,12 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/new", (req, res) => {
+    res.json({
+        message: "New Fixed World!",
+    });
+});
+
 app.listen(3000, () => {
     console.log("Server is running on http://localhost:3000");
 });
