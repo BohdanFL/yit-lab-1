@@ -16,6 +16,14 @@ app.get("/new", (req, res) => {
     });
 });
 
+app.get("/world", (req, res) => {
+    res.json({
+        name: "Universe",
+        population: 8 * 10**8,
+        size: "13.8 billion light-years",
+    });
+});
+
 app.listen(3000, () => {
     console.log("Server is running on http://localhost:3000");
 });
