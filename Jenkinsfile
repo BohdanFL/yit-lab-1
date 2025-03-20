@@ -1,7 +1,8 @@
 pipeline {
     agent {
-        any {
-            args '-p 3000:3000'
+        docker {
+            image 'node:22' // Використовуємо офіційний образ Node.js
+            args '-p 3000:3000' // Проксіюємо порт для доступу до сайту
         }
     }
     tools {
