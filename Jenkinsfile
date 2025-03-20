@@ -4,9 +4,10 @@ pipeline {
         nodejs '22.13.1'
     }
     stages {
-        stage('NPM') { 
+        stage('Build') { 
             steps {
-                sh 'npm --version'
+                sh 'npm install'
+                sh 'npm run build'
             }
         }
     }
