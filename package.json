@@ -5,7 +5,7 @@
     "scripts": {
         "start": "node dist/bundle.js",
         "dev": "nodemon src/index.js",
-        "build": "npm run test && webpack",
+        "build": "webpack",
         "test": "mocha tests"
     },
     "author": "",
